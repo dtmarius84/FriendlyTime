@@ -5,13 +5,13 @@ require('dotenv').config({path: path.join(__dirname, '.env')});
 
 const url = process.env.DB_PASSWORD;
 const dbclient = new MongoClient(url);
-const db = dbclient.db('kazusa');
+const db = dbclient.db('FriendlyTime');
 
 async function Blackjack(client, interaction) {
         let acep //player ace
         let aced //dealer ace
         const [type, gameId, buttonCoords] = interaction.customId.split('-');
-        const { rhemojis, bhemojis, demojis, cemojis } = require('/Codes/dc_bots/kazusa/bjimg');
+        const { rhemojis, bhemojis, demojis, cemojis } = require('../bjimg');
         const allEmojis = { ...rhemojis, ...bhemojis, ...demojis, ...cemojis };
     
         const deck = []
