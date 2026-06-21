@@ -5,7 +5,7 @@ require('dotenv').config({path: path.join(__dirname, '.env')});
 
 const url = process.env.DB_PASSWORD;
 const dbclient = new MongoClient(url);
-const db = dbclient.db('kazusa');
+const db = dbclient.db('FriendlyTime');
 
 const AUTHOR_EMOJI = '1252907410411098114';   // O
 const OPPONENT_EMOJI = '1252907411757334589'; // X
