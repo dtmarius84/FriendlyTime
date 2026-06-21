@@ -14,7 +14,8 @@ async execute(interaction) {
         .setDescription( italic('a fun anime bot with games') )
         .addFields(
             { name: ' ', value: ' ' },
-            { name: 'Game Commands', value: `**/x-o** - start a tic-tac-toe game\n`},
+            { name: 'Game Commands', value: `**/x-o** - start a tic-tac-toe game\n
+			**/blackjack** - start a blackjack game\n`},
             { name: ' ', value: ' ' },
             //{ name: 'Admin Commands', value: `**/ping** - spam an user with pings (extremely funny) \n**/redirect** - this commands will redirect the bot to a certain channel, whenever a message is sent in said channel it will reply \n**/unredirect** - wipes up the /redirect channel`},
         )
