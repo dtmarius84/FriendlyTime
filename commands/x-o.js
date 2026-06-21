@@ -51,7 +51,7 @@ async execute(interaction) {
     try {
         const dbclient = new MongoClient(url);
         await dbclient.connect();
-        const db = dbclient.db('kazusa');
+        const db = dbclient.db('FriendlyTime');
         const ttt = db.collection('ttt');
         await ttt.insertOne({
             "turn": 0,
