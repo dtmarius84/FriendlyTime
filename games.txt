@@ -1,5 +1,0 @@
--x/o
--minesweeper
--ships
--blackjack
--uno
