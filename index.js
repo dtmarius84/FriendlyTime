@@ -31,7 +31,7 @@ for (const file of commandFiles) {
 }
 
 client.once(Events.ClientReady, () => {
-	console.log('kazusa is online');
+	console.log('FT is online');
 });
 
 client.on(Events.InteractionCreate, async interaction => {
