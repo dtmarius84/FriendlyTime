@@ -24,7 +24,7 @@ async execute(interaction) {
         stay: '⬜',
     };
 
-    const { rhemojis, bhemojis, demojis, cemojis } = require('/Codes/dc_bots/kazusa/bjimg');
+    const { rhemojis, bhemojis, demojis, cemojis } = require('../bjimg');
     const allEmojis = { ...rhemojis, ...bhemojis, ...demojis, ...cemojis };
 
     const deck = []
@@ -92,7 +92,7 @@ async execute(interaction) {
         try {
             const dbclient = new MongoClient(uri);
             await dbclient.connect();
-            const db = dbclient.db('kazusa');
+            const db = dbclient.db('FriendlyTime');
             const bk = db.collection('blackjack');
             await bk.insertOne({
                 "turn": 0,
