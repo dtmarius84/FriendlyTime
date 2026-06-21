@@ -9,7 +9,7 @@ async execute(interaction) {
     const bot = interaction.client.user;
     const embed = new EmbedBuilder()
         .setColor(0xFF00EB)
-        .setTitle('kazusa-san')
+        .setTitle('FriendlyTime')
         .setThumbnail(bot.avatarURL())
         .setDescription( italic('a fun anime bot with games') )
         .addFields(
